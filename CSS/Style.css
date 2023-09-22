@@ -1,29 +1,47 @@
 body{
-    width: 100vw;
+    width: 1000px;
     height: 100vh;
     margin: 0;
-    font-family: 'frias sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+
 }
 
 h1, h2, h3 {
 font-family: 'Frank Ruhl Libre', serif;;
 }
 
-.content h1{
+.content .rectangle h1{
     font-size: 45px;
     line-height: 45px;
     font-weight: 900;
 }
 
-.content p {
+.content .left p {
     font-size: 14px;
     line-height: 24px;
     font-weight: 500;
-    padding-right: 9rem;
+    padding-right: 12rem;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 0;
+    
 }
+
 .content quote{
     color: antiquewhite;
     font-weight: 600;
+}
+.content .orange p,.content .yellow p {
+    color:rgba(0, 0, 0, 0.5);
+    font-size: 11px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+.content .orange h1, .content .yellow h1{
+    color:rgba(255, 255, 255, 1);
+    font-size: 32px; 
+    margin: 0;
 }
 
 .content {
@@ -36,27 +54,30 @@ font-family: 'Frank Ruhl Libre', serif;;
     grid-column: auto/span 3;
     grid-row: span 2;
     padding-left: 3rem;
-
+    padding-top: 3rem;
 }
 
 .content .picture{
     display: flex;
-
 }
+
 .content img{
     width:286px;
     height: 279px;
-    justify-self: flex-end;}
+    justify-self: flex-end;
+}
 
-    .content button{
-        width: 131px;
-        height: 39px;
-        border-radius: 100px;
-        border-style: none;
-        margin-bottom: auto;
-        margin-top: 50px;
-
-    }
+button{
+    width: 131px;
+    height: 39px;
+    border-radius: 100px;
+    border-style: none;
+    margin-bottom: auto;
+    margin-top: 50px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 3px;
+}
 
 .content .orange {
     background: #F17949;
@@ -67,5 +88,48 @@ font-family: 'Frank Ruhl Libre', serif;;
 .content .yellow{
     background: #FFB939;
     grid-column: auto/span 3;
+}
+
+.rectangle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center    
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem 3rem 3rem 3rem;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+
+}
+.gray{
+    background-color: rgba(169, 161, 158, 1);    
+    grid-template-columns: repeat(6,1fr);
+
+}
+
+.container .headline{
+    color: rgba(255, 255, 255, 1);
+font-size: 45px;
+font-weight: 900;
+line-height: 45px;
+letter-spacing: -0.02em;
+text-align: left;
+
+}
+.container .text {
+    font-size: 14px;
+}
+
+
+.container .card{
+    grid-row: 2;
 }
 
