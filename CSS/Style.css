@@ -18,7 +18,12 @@ font-family: 'Frank Ruhl Libre', serif;;
 .content p {
     font-size: 14px;
     line-height: 24px;
-    padding-right: 8rem;
+    font-weight: 500;
+    padding-right: 9rem;
+}
+.content quote{
+    color: antiquewhite;
+    font-weight: 600;
 }
 
 .content {
@@ -35,12 +40,23 @@ font-family: 'Frank Ruhl Libre', serif;;
 
 .content .picture{
     display: flex;
-    justify-content: flex-end;
+
 }
 .content img{
     width:286px;
     height: 279px;
-justify-self: flex-end;}
+    justify-self: flex-end;}
+
+    .content button{
+        width: 131px;
+        height: 39px;
+        border-radius: 100px;
+        border-style: none;
+        margin-bottom: auto;
+        margin-top: 50px;
+
+    }
+
 .content .orange {
     background: #F17949;
     grid-column: auto/span 3;
