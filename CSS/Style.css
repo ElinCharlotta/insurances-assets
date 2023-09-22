@@ -1,0 +1,54 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: 'frias sans', sans-serif;
+}
+
+h1, h2, h3 {
+font-family: 'Frank Ruhl Libre', serif;;
+}
+
+.content h1{
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 900;
+}
+
+.content p {
+    font-size: 14px;
+    line-height: 24px;
+    padding-right: 8rem;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+}
+.content .left{
+    background-color:#C7DDEA;
+    grid-column: auto/span 3;
+    padding-left: 3rem;
+
+}
+
+.content .picture{
+    display: flex;
+    justify-content: flex-end;
+}
+.content img{
+    width:286px;
+    height: 279px;
+justify-self: flex-end;}
+.content .orange {
+    background: #F17949;
+    grid-column: auto/span 3;
+
+}
+
+.content .yellow{
+    background: #FFB939;
+    grid-column: auto/span 3;
+}
+
