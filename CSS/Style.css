@@ -153,8 +153,6 @@ button{
 
 }
 
-
-
 .container .card {
     background-color: rgba(255, 255, 255, 1);
     grid-column: auto/span 2;
@@ -162,6 +160,7 @@ button{
     text-align: center;
     padding: 20px;
     position: relative;
+    height: 308px;
 }
 
 .color-background{
