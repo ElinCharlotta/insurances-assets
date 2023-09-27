@@ -9,13 +9,22 @@ body{
     font-family: 'Fira Sans', sans-serif;
 
 }
-
 h1, h2, h3 {
-font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+h1{
 font-size: 45px;
 line-height: 45px;
 font-weight: 900;
 }
+
+h2 {
+    font-size: 2.2rem;
+    margin: 0;
+    color: #fff;
+}
+
 
 p{
     color:rgba(0, 0, 0, 0.6);}
@@ -30,16 +39,64 @@ p{
     .welcome {
         grid-column: auto/span 3;
         grid-row: auto/ span 6;
+        height: 40rem;
+        background-image: url("../img/family.png");
+        background-position: 90% bottom;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-color: #C7DDEA;
+        padding: 4rem;
+    }
+    .learn, .join{
+        height: 20rem;
+        grid-column: auto /span 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .learn{
-        grid-column: auto /span 3;
+        background-color: #F17949;
     }
 
     .join {
-        grid-column: auto /span 3;
+        background-color: #FAB131;
     }
 
+.navigation {
+    margin: 2rem;
+    grid-column: auto /span 6;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    }
+
+.navigation .navigation__element{
+    text-decoration: none;
+}
+
+.facts{
+    grid-column: auto /span 6;
+    display: flex;
+    height: 40rem;
+    background-color: #A9A19E;
+    padding: 5rem;
+}
+.fatcs__connect{
+    margin: 16px;
+}
+
+.fatcs__connect h1{
+    max-width: 500px;
+    color:rgba(255, 255, 255, 1);
+    margin:0;
+}
+
+.facts__text{
+    max-width: 460px;
+    padding-left: 5rem;
+}
 
 .cards {
     grid-area: cards;
@@ -48,6 +105,10 @@ p{
     background-color: #FAB131;
 }
 
+.facts .join-button{
+    margin-top: 3rem;
+
+}
 .card {
     background-color: #fff;
     display: flex;
