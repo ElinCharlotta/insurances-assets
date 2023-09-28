@@ -108,6 +108,7 @@ p{
 .cards {
    grid-column: auto / span 6;
    display: flex;
+   flex-wrap: wrap;
    justify-content: center;
     background-color: #FAB131;
 }
@@ -123,7 +124,7 @@ p{
     border-radius: 4px;
     margin: 0.5rem;
     padding: 1rem;
-    transform: translateY(-200px);
+    transform: translateY(-180px);
 }
 
 .card h3 {
