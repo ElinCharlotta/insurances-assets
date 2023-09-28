@@ -108,7 +108,6 @@ p{
 .cards {
    grid-column: auto / span 6;
    display: flex;
-   flex-wrap: wrap;
    justify-content: center;
     background-color: #FAB131;
 }
@@ -212,9 +211,10 @@ p{
     }
 
 .quick-info{
+    grid-column: auto /span 6;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
  
 
     
@@ -265,9 +265,8 @@ footer{
     @media screen and (max-width:768px) { 
 
 
-      .quick-info{
-        display:flex;
-        flex-direction: column;
+    .quick-info__box{
+        width: 100%;
+    }
   
     }
-}
